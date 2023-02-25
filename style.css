@@ -29,19 +29,36 @@ p {
   overflow-wrap: break-word;
 }
 body {
-    height: 100vh;
-    position: relative;
     font-family: 'Manrope',sans-serif;
+    background-color: var(--DarkBlue);
+    position: relative;
 }
 
 .wrapper {
     font-size: 1.75rem;
   font-family: "Manrope", sans-serif;
-  background-color: var(--DarkBlue);
-  position: relative;
   padding-top: 4.3em;
   height: 100vh;
+  display: flex;
+  justify-content: space-between;
+  flex-direction:column;
+  gap: 2em;
 }
+.loader {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+    background-color:rgba(0, 0, 0, 0.863);
+    height: 100%;
+    width: 100%;
+    transition: all .5s ease;
+  }
+  
+  .hidden {
+    display: none;
+  }
 /* container */
 .container {
   background-color: var(--DarkGrayishBlue);
@@ -117,29 +134,12 @@ picture {
     align-items: center;
     padding-top: 0;
   }
+  .attribution {
+   position: absolute;
+   bottom: 0;
+  }
 }
 
-.loader {
-  position: absolute;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  z-index: 999;
-  background-color:rgba(0, 0, 0, 0.863);
-  height: 100%;
-  width: 100%;
-  transition: all .5s ease;
-}
-/* .loader h3 {
-    color: var(--LightCyan);
-    font-size: 2rem;
-    letter-spacing: 2px;
-    text-transform: capitalize;
-    font-family: 'Manrope', sans-serif;
-} */
-.hidden {
-  display: none;
-}
 
 /* loader animation */
 
