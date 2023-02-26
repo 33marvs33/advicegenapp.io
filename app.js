@@ -6,9 +6,9 @@ const adviceNum = document.querySelector(".advice-num");
 const advice = document.querySelector("h1");
 const loader = document.querySelector(".loader");
 // event listener when load//
-// window.addEventListener("DOMContentLoaded", () => {
-//   generate();
-// });
+window.addEventListener("DOMContentLoaded", () => {
+  generate();
+});
 
 // api calling//
 function generate() {
